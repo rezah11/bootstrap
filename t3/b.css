@@ -1,0 +1,86 @@
+@charset "utf-8";
+fa{
+   font-family: 'font awesome';
+  }
+nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav div.col-sm-1:first-of-type{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-basis: 115px;
+    order: 1;
+    cursor: default;
+}
+nav div.col-sm-1 span{
+    flex-grow: 1;
+}
+nav div.col-sm-1 div{
+    flex-grow: 1;    
+}
+nav div.col-sm-1:nth-child(n+2){
+    padding: 0px;
+    flex-basis:54px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+   background-color: #10550D;
+        cursor: pointer;
+}
+nav div.col-sm-1:nth-child(n+3){
+    background-color: #9B0002;
+}
+nav div.col-sm-1:nth-child(n+4){
+    background-color: #393939;
+}
+nav div.col-sm-1 span.badge{
+    flex-grow: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+span.badge.bg-success{
+    background-color: #34BC34;
+}
+span.badge.bg-danger{
+    background-color: #FF0F0F;
+}
+span.badge.bg-warning{
+    background-color: #979797;
+}
+nav div.col-sm-1 div.glyphicon{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-grow:0;
+    color: #FEFEFE;
+}
+nav div.col-sm-2{
+    height: 50px;
+    flex-basis: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    order: -5;
+    cursor: pointer;
+}
+nav div.col-sm-2.bg-primary{
+    background-color: #65A0D3;
+}
+nav div.col-sm-2 i.glyphicon{
+    font-size: 12px;
+}
+nav div.col-sm-2 span.text-right{
+    font-size: 10.5px;
+}
+nav div.col-sm-2 span.text-right span{
+    font-size: 14px;
+}

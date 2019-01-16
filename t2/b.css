@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+table{
+    border: 3px solid #9D9D9D;
+    border-collapse: collapse;
+}
+.fn{
+    font-size: 19px;
+}
+.fn1{
+    font-size: 16px;
+}
+
+th,td{
+    border: 1px solid #9D9D9D;
+}
+.t1{
+    font-size: 11px;
+}
+.t2,.t3,.t4,.t5,.t6{
+    font-size: 13px;
+}
+td.bg-danger:nth-child(n+3){
+    opacity: .8;
+}
+td.bg-success:nth-child(n){
+    opacity: .8;
+}
+td.bg-info:nth-child(n){
+    opacity: .8;
+}
+td.bg-warning:nth-child(n){
+    opacity: .8;
+}
+.t111:hover{
+    background-color: #7A7A7A;
+        opacity: 1;
+}
