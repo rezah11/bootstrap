@@ -3,10 +3,72 @@ div.panel-heading{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 300px;
+    justify-content: center;
+}
+div.panel-group.bg-info{
+    background-color: #F5F5F5;
+}
+div.panel-heading div:first-of-type{
+    display: flex;
+   flex-grow: 2;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.panel-heading div:nth-child(n+2){
+    font-size: 25px;
+    color: #F9F6F6;
+   flex-grow: 0;
+    justify-content: flex-end;
+    
+}
+div.panel-heading div:nth-child(n+3){
+    font-size: 13px;
+    color: #F9F6F6;
+    flex-grow: 1;
+}
+div.panel-heading.bg-danger{
+    background-color: #C52F32;
 }
 div.panel-danger{
     background-color: #FA7275;
 }
 img.img-thumbnail{
     height: 150px;
+    background-color: #EFBDBE;
+    border: 3px solid #EFBDBE;
+}
+div.panel.panel-footer{
+    direction: rtl;
+}
+i{
+    font-size: 19px;
+}
+div.badge{
+   position: relative;
+    border-radius: 3px;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    align-items: center;
+    z-index: 1;
+}
+div.badge.bg-danger{
+    background-color: #C52F32;
+}
+i:nth-child(n+2){
+    position: relative;
+    left: 5px;
+}
+div.panel-footer span{
+    position: relative;
+    right: 10px;
+}
+div.panel-group div.panel-footer:nth-child(n+3){
+    background-color: #FFFFFF;
+}
+
+div.panel-group div.panel-footer:nth-child(-n+2){
+    border-right: 12px solid #C52F32;
 }
