@@ -1,0 +1,125 @@
+@charset "utf-8";
+body{
+    background-image: url("https://cdn.vox-cdn.com/thumbor/2AHzLOUc2L1C-y6w95OGSVJw9tU=/0x0:2040x1361/1200x800/filters:focal(857x518:1183x844)/cdn.vox-cdn.com/uploads/chorus_image/image/62765614/mswindows2_2040.0.0.jpg");
+    background-size: cover;
+}
+div#collapse1.bg-danger{
+    background-color: #383838;
+    color: aliceblue;
+    font-size:12px;
+}
+
+div#collapse1.bg-danger div.col-lg-6 div{
+    height:50px;
+    display: flex;
+    align-items: center;
+    text-indent:10px;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+1) div{
+    height:50px;
+    align-items: center;
+    justify-content:center; 
+    display: flex;
+    flex-grow: 0;
+    text-indent: 10px;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+2){
+    align-items:  flex-end;
+    justify-content: flex-start;
+    text-indent: 0px;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+3){
+    align-items:  center;
+    justify-content: flex-start;
+    text-indent: 10px;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+3) span{
+    display: flex;
+    align-items:  flex-end;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+6){
+    height: 120px;
+}
+div#collapse1.bg-danger div.col-lg-6 div:nth-child(n+7){
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+div#collapse1.bg-danger div.col-lg-6.bg-primary{
+    background-color: #383838;
+    top:75px;
+}
+div#collapse1.bg-danger div.col-lg-6.bg-primary div{
+    background-color: #1ABAC9;
+    height:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-indent:10px;
+    border: 3px solid #383838;
+}
+div#collapse1.bg-danger div.col-lg-6.bg-primary div i{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+div#collapse2{
+    padding: 0px;
+    background-color: #383838;
+}
+div#collapse2 div.col-lg-2{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    background-color: #000000;
+    justify-content: center;
+    color: aliceblue
+}
+
+div#collapse2 div.col-lg-2 i{
+    height: 40px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div#collapse2 div.col-lg-2 i:nth-child(n+5){
+    height: 205px;
+}
+div#collapse2 div.col-lg-2 i:nth-child(n+6){
+    flex-grow: 1;
+    align-items: center;
+}
+div#collapse2 div.col-lg-10{
+    padding: 0px;
+    color: aliceblue;
+}
+div#collapse2 div.col-lg-10 div.col-lg-12{
+    font-size: 20px;
+    top: 10px;
+}
+div#collapse2 div.col-lg-10 input{
+    top:390px;
+    height: 40px;
+}
+ul.navbar-right li:nth-child(-n+3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+}
+ul.navbar-right li:last-of-type div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    top: 0px;
+    color: aliceblue;
+}
