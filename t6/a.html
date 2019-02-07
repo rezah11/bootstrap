@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Practice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="b.css" >
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" tabindex="-1" href="#menu1">Menu 1</a></li>
+                    <li><a data-toggle="tab" tabindex="-1" href="#menu2">Menu 2</a></li>
+                </ul>
+                <div id="mytabcontent" class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>HOME</h3>
+                        <p>Some content.</p>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Some content in menu 1.</p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Some content in menu 2.</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination pagination-md pager">
+                <li class="previous"><a href="#">previous</a></li> 
+                <li><a href="#">1</a></li> 
+                <li><a href="#">2</a></li> 
+                <li><a href="#">3</a></li> 
+                <li class="next"><a href="#">next</a></li> 
+            </ul>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul.pagination li.next").click(function(){
+                var x=$("ul.nav-tabs").find("li.active");
+                var nextt=x.next().length ? x.next() : $("ul.nav-tabs li:first-of-type");
+                var z=nextt.index();
+                console.log(z);
+                $("ul.nav-tabs li").removeClass("active");
+                $("div.tab-content div").removeClass("active in ");
+                $("div.tab-content div").eq(z).addClass("active in ");
+                nextt.addClass("active");
+                console.log(nextt.index());
+            });
+           $("ul.pagination li.previous").click(function(){
+                var x=$("ul.nav-tabs").find("li.active");
+                var prevv=x.prev().length ? x.prev() : $("ul.nav-tabs li:last-of-type");
+                var z=prevv.index();
+                console.log(z);
+                $("ul.nav-tabs li").removeClass("active");
+                $("div.tab-content div").removeClass("active in ");
+                $("div.tab-content div").eq(z).addClass("active in ");
+                prevv.addClass("active");
+                console.log(nextt.index());
+            });
+            $("ul.pagination li:not(:first-of-type):not(:last-of-type)").click(function(){
+                var x=$(this).index();
+                console.log(x);
+                $("ul.nav-tabs li").removeClass("active");
+                $("div.tab-content div").removeClass("active in ");
+                $("div.tab-content div").eq(x-1).addClass("active in ");
+                $("ul.nav-tabs li").eq(x-1).addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
