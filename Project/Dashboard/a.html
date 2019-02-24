@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Practice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="b.css" >
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-lg-12" style="position: fixed">
+                <!--menu top-->
+                <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-10"><a href="#">Swift Hospital</a></div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-4">
+                            <img class="img-circle" src="../../t3/kobe-bryant-wallpaper-widescreen-On-High-Resolution-Wallpaper.jpg" width="80px" height="80px" alt="ali"/>
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="col-lg-12">Wellcome</p>
+                            <p>DR.John</p>
+                            <div>
+                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10"><span>today report</span></div>
+                        <div class="col-lg-11">
+                            <div class="text-center col-lg-4"><p>16</p><p>patiant</p></div>
+                            <div class="text-center col-lg-4"><p>20</p><p>visit</p></div>
+                            <div class="text-center col-lg-4"><p>14</p><p>pending</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <input type="text" class="form-control" placeholder="Explore Swift ...">
+                    
+                </div>
+                <div class="col-lg-8" id="top-menu">
+                        <i class="glyphicon glyphicon-adjust"><span class="badge align-top">5</span></i> 
+                        <i class="glyphicon glyphicon-adjust"><span class="badge">6</span></i> 
+                        <i class="glyphicon glyphicon-adjust"><span class="badge">7</span></i>                
+                </div>
+                <!--menu left-->
+               <div class="col-lg-12" id="down-menu">
+                <ul class="col-lg-2 navbar-header">
+                    <li><p>Main Navigation</p></li>
+                    <li><i class="glyphicon glyphicon-apple"></i><span>Dashboard</span><i class="glyphicon glyphicon-alert text-hide"></i></li>
+                    <li data-toggle="collapse" data-target="#Doctor">
+                        <i class="glyphicon glyphicon-apple"></i><span>Doctors</span><i class="glyphicon glyphicon-plus"></i>
+                    </li>
+                    <div class="collapse" id="Doctor">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>All Doctor</span></li>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>Profile</span></li>
+                        </ul>
+                    
+                    </div>
+                    <li data-toggle="collapse" data-target="#Patiant">
+                        <i class="glyphicon glyphicon-apple"></i><span>Patiant</span><i class="glyphicon glyphicon-plus"></i>
+                    </li>
+                    <div class="collapse" id="Patiant">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>All Pattiant</span></li>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>Add Patiant</span></li>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>Patiant Profile</span></li>
+                        </ul>
+                    
+                    </div>
+                    <li data-toggle="collapse" data-target="#Extrapage">
+                        <i class="glyphicon glyphicon-apple"></i><span>Extra Pages</span><i class="glyphicon glyphicon-plus"></i>
+                    </li>
+                    <div class="collapse" id="Extrapage">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>Log in</span></li>
+                            <li><i class="glyphicon glyphicon-apple"></i><span>Sign Up</span></li>
+                        </ul>
+                    
+                    </div>
+                    <li><i class="glyphicon glyphicon-apple"></i><span>Report</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="glyphicon glyphicon-apple"></i><span>widgets</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                </ul>
+            </div>
+            </div>         
+        </div>
+                    <!--content-->
+
+        <div class="row">
+            <div class="col-lg-12" id="content-border">
+             <div class=" col-lg-10">
+                    <div class="col-lg-12" id="content">
+                        <div class="col-lg-10">
+                            <p>Dashboard</p>
+                            <p> Welcome to Swift application </p>
+                        </div>
+                        <div class="col-lg-12" id="content-pat">
+                            <div class="col-lg-2">
+                                <span>
+                                    <p>New Patient</p>
+                                    <p>27</p>
+                                </span>
+                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span>
+                                    <p>OPD Patient</p>
+                                    <p>12</p>
+                                </span>
+                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span>
+                                    <p>Today's Operations</p>
+                                    <p>05</p>
+                                </span>
+                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                            </div>
+                            <div class="col-lg-2">
+                                <span>
+                                    <p>Hospital Earning</p>
+                                    <p>$3,540</p>
+                                </span>
+                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12" id="content-chart">
+                            <div>
+                                <span>Hospital Survey</span>
+                            </div>
+                                <div class="col-lg-12" style="position: relative; height:300px; width:100%">
+                                    <canvas id="myChart"></canvas>
+                                    </div>
+                        </div>
+                        <div class="col-lg-12" id="content-chart2">
+                            <div class="col-lg-3">
+                                <div>
+                                    <p>NEW PATIANT
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                    </p>
+                                    <p>18% High then last month</p>
+                                    
+                                </div>
+                                <div class="bg-danger">
+                                    <div>
+                                        <p>overall</p>
+                                        <p>70.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>montly</p>
+                                        <p>35.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>day</p>
+                                        <p>20.04%</p>
+                                    </div>
+                                </div>
+                                <div class="chart-container" style="position: relative; height:100px; width:100% ;top:50px;" id="chartContainer" >
+                                    <canvas></canvas>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>
+                                    <p>Heart Surgeries 
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                            
+                                    </p>
+                                    <p>18% High then last month</p>
+                                    
+                                </div>
+                                <div class="bg-danger">
+                                    <div>
+                                        <p>overall</p>
+                                        <p>95.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>montly</p>
+                                        <p>40.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>day</p>
+                                        <p>10.04%</p>
+                                    </div>
+                                </div>
+                                <div class="chart-container" style="position: relative; height:100px; width:100% ;top:50px;" id="chartContainer1" >
+                                    <canvas></canvas>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>
+                                    <p>Medical Treatment 
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                            
+                                    </p>
+                                    <p>18% High then last month</p>
+                                    
+                                </div>
+                                <div class="bg-danger">
+                                    <div>
+                                        <p>overall</p>
+                                        <p>65.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>montly</p>
+                                        <p>57.04%</p>
+                                    </div>
+                                    <div>
+                                        <p>day</p>
+                                        <p>15.04%</p>
+                                    </div>
+                                </div>
+                                <div class="chart-container" style="position: relative; height:100px; width:100% ;top:50px;" id="chartContainer2" >
+                                    <canvas></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-lg-12" id="content-tbl">
+                                <div>
+                                    <p>New Patient List <a href="#"><i class="glyphicon glyphicon-alert"></i></a></p>
+                                    <p>Description text here...</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table ">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Firstname</th>
+                                                <th>Lastname</th>
+                                                <th>Username</th>
+                                                <th>Diseases</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Virginia</td>
+                                                <td>Rose</td>
+                                                <td>@Rose</td>
+                                                <td><span class="label label-danger text-center">Fever</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Julie</td>
+                                                <td>Gaylord</td>
+                                                <td>@Julie </td>
+                                                <td><span class="label label-primary text-center">Cancer</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Jacqueline</td>
+                                                <td>Woods</td>
+                                                <td>@Woods</td>
+                                                <td><span class="label label-warning text-center">Lakva</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Jonathan</td>
+                                                <td>Lewis</td>
+                                                <td>@Jonathan</td>
+                                                <td><span class="label label-success text-center">Dental</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Margaret</td>
+                                                <td>Griffin</td>
+                                                <td>@Margaretv</td>
+                                                <td><span class="label label-primary text-center">Cancer</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Joseph</td>
+                                                <td>Hunter</td>
+                                                <td>@Rose</td>
+                                                <td><span class="label label-success text-center">Dental</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12" id="content-end">
+                            <div class="col-lg-3 bg-danger">                                    
+                                <p>Patient Prograss <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                                </p>
+                                <div>
+                                    <span>Mark Otto</span><span class="label label-danger text-center">21%</span>
+                                </div>
+                                <div>
+                                    <span>Jacob Thornton</span><span class="label text-center label-default">50%</span>
+                                </div>
+                                <div>
+                                    <span>Jacob Thornton</span><span class="label label-success text-center">90%</span>
+                                </div>
+                                <div>
+                                    <span>M. Arthur </span><span class="label label-primary text-center">75%</span>
+                                </div>
+                                <div>
+                                    <span>Jacob Thornton </span><span class="label label-warning text-center">60%</span>
+                                </div>
+                                <div>
+                                    <span>M. Arthur </span><span class="label label-success text-center">91%</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-primary">
+                              <p>Patient Prograss <a href="#"><em class="glyphicon glyphicon-alert"></em></a> </p>
+                                <div class="table-responsive">
+                                    <table class="table " style="position= relative;top=200px;">
+                                        <thead>
+                                            <tr>
+                                                <th>Firstname</th>
+                                                <th>Chart</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dean Otto</td>
+                                                <td><span class="dynamicbar"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>K. Thornton</td>
+                                                <td><span class="dynamicbar1"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kane D.</td>
+                                                <td><span class="dynamicbar2"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jack Bird</td>
+                                                <td><span class="dynamicbar3"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hughe L.</td>
+                                                <td><span class="dynamicbar4"></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-success" id="sad">
+                                <p>Visits from countries <a href="#"><em class="glyphicon glyphicon-alert"></em></a> </p>
+                                <div>
+                                    <div class="progress-pat">
+                                        <div><span>6350</span><span>From India 58%</span></div>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 58%"></div></div>
+                                    </div>
+                                    <div class="progress-pat">
+                                        <div><span>3250</span><span>From UAE 90%</span></div>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div></div>
+                                    </div>
+                                    <div class="progress-pat">
+                                        <div><span>1250</span><span>From Australia 70%</span></div>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>
+                                    </div>
+                                    <div class="progress-pat">
+                                        <div><span>1350</span><span>From USA 40%</span></div>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+            </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="jquery.sparkline.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+        var myvalues = [30,25,10,20,36,4,19];
+
+        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green',} );
+            var myvalues1 = [10,4,26,38,18,14,29];
+
+        $('.dynamicbar1').sparkline(myvalues1, {type: 'bar', barColor: 'green',} );
+            var myvalues2 = [15,25,5,12,35,3,38];
+
+        $('.dynamicbar2').sparkline(myvalues2, {type: 'bar', barColor: 'green',} );
+            var myvalues3 = [18,30,3,36,12,22,40];
+
+        $('.dynamicbar3').sparkline(myvalues3, {type: 'bar', barColor: 'green',} );
+            var myvalues4 = [12,1,36,16,30,24,19];
+
+        $('.dynamicbar4').sparkline(myvalues4, {type: 'bar', barColor: 'green',} );
+
+    });
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+          label: "My First dataset",
+          data: [6, 37, 10, 20, 10, 22, 40],
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(200, 99, 132, .7)',
+          ],
+          borderWidth: 2
+        },
+        {
+          label: "My Second dataset",
+          data: [28, 48, 20, 19, 30, 27, 30],
+          backgroundColor: [
+            'rgba(0, 137, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(0, 10, 130, .7)',
+          ],
+          borderWidth: 2
+        }
+      ]  
+    },    
+    options: {
+        responsive: true,
+    maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
+    }
+});
+   window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: ""
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+       var chart1 = new CanvasJS.Chart("chartContainer1", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: ""
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+       var chart2 = new CanvasJS.Chart("chartContainer2", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: ""
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+
+chart.render();
+chart1.render();
+chart2.render();
+}
+</script>
+
+</body>
+</html>
