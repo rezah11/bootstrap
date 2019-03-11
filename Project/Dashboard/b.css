@@ -101,12 +101,17 @@ div.row div.col-lg-12 div.col-lg-2 input{
 div.row div.col-lg-12 div.col-lg-2 input::placeholder {
     color: aliceblue;
 } 
-div.col-lg-12 div#top-menu {
+ul#top-menu {
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    top:10px;
+    top: -40px;
+    list-style: none;
+    z-index: auto;
+    left: 35%;
+    height: 0px;
 }
-div.col-lg-12 div#top-menu i span.badge{
+ul#top-menu li i span.badge{
     border-radius: 3px;
     font-size: 10px;
     background-color: black;
@@ -114,7 +119,7 @@ div.col-lg-12 div#top-menu i span.badge{
     top: -10px;
     position: relative;
 }
-div.col-lg-12 div#top-menu i{
+ul#top-menu li i.icon1{
     position: relative;
     top: 10px;
     color: aliceblue;
@@ -122,36 +127,168 @@ div.col-lg-12 div#top-menu i{
     margin-right: 5px;
     cursor: pointer;
 }
+ul#task-drop {
+    position: absolute;
+    top: 30px;
+    z-index: 99999;
+    overflow-y: hidden;
+    height: 200px;
+    padding: 0px;
+    width: 600%;
+}
+ul#task-drop li :first-of-type{
+    height: 30px;
+    padding: 5px 0px 0px 10%;
+    border: none;
+    font-weight: bold;
+}
+ul#task-drop li:last-of-type a{
+    padding-top: 10px;
+}
+ul#task-drop li:last-of-type a:hover{
+    background-color: white;
+}
+ul#task-drop li:nth-child(n+2){
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+}
+ul#task-drop li:nth-child(n+2) a{
+    padding:0px;
+    height: 60px;
+}
+ul#task-drop li:nth-child(n+2) div.text-left{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+ul#task-drop li:nth-child(n+2) div div.progress{
+    height: 8px;
+}
+ul#task-drop li:nth-child(n+2) div div{
+    padding: 0px;
+    display: flex;    
+}
+ul#task-drop li:nth-child(n+2) div span{
+    font-weight: normal;
+    font-size: 12px;
+}
+ul#task-drop li:nth-child(n+2) div span:first-of-type{
+    padding: 0px;
+    display: flex;
+    flex-grow: 9;
+}
+ul#task-drop li:nth-child(n+2) div span:last-of-type{
+    display: flex;
+    flex-grow: 1;
+}
+ul#top-menu li ul#note-drop{
+    position: absolute;
+    top: 30px;
+    z-index: 99999;
+    height: 200px;
+    overflow: hidden;
+}
+
+ul#top-menu li ul.dropdown-menu.bg-danger{
+    width: 850%;
+}
+ul#top-menu li ul#note-drop li:first-of-type {
+    padding-top: 10px;
+    padding-left: 5%;
+    border: none;
+}
+ul#top-menu li ul#note-drop li:last-of-type :hover{
+    background-color: white;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2){
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    border-top: 2px solid #F5F0F0;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) a{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding-left: 5%;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div:first-of-type{
+    display: flex;
+    flex-grow: 0;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div:first-of-type div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div:first-of-type div i{
+    cursor: pointer;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div.text-left{
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding-left: 4%;
+    flex-direction: column;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div.text-left div:first-of-type b{
+    font-size: 16px;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div.text-left div:first-of-type span.bol{
+    font-size: 15px;
+    align-items: flex-end;
+    text-indent: 10px;
+    display: flex;
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div.text-left div:last-of-type i{
+    font-size: 10px;
+    color:#B1B1B1; 
+}
+ul#top-menu li ul#note-drop li:nth-child(n+2) div.text-left div:last-of-type span{
+    font-size: 10px;
+    color: #B1B1B1;
+    text-indent: 19px;
+    padding-left: 5px;
+}
 div.row div.col-lg-12#down-menu{
     background-color: #353434;
+    color: #212020;
     position: relative;
     top: 40px;
+    padding: 0px;
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2{
     color: #9A9898;
     list-style-type: none;
     padding: 0px;
-        overflow-y: scroll;
     height: 450px;
+    overflow-y: hidden;
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2 li{
     display: flex;
     align-items: center;
     flex-grow: 0;
     height: 50px;
+    padding-left: 10%;
+
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2 :not(:first-of-type){
     cursor: pointer;
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2 li i{
     display: flex;
-    flex-grow: 0;
+    flex-grow: 1;
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2 li span{
     display: flex;
-    flex-grow: 1;
-    text-indent: 20px;
+    flex-grow: 5;
 }
+
 div#Extrapage ul{
     padding:0px;
 }
@@ -166,42 +303,39 @@ div.row div.col-lg-12 div.col-lg-10{
     top: 30px;
     right:0%;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content{
+ div#content{
     background-color: #F3F3F3;
     background-image: none;
     height: 1800px;
-    z-index: 1;
     position: absolute;
-    left: 19.9%;
-    top: 20px;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div.col-lg-10 p:first-of-type{
+div#content div.col-lg-10 p:first-of-type{
     background-image: none;
     top: 10px;
     font-weight: bold;
     font-size: 20px;
     color: #363636;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div.col-lg-10 p:nth-child(n+2){
+div#content div.col-lg-10 p:nth-child(n+2){
     background-image: none;
     top: -5px;
     position: relative;
     font-size: 10px;
     color: #363636;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div#content-pat{
+div#content div#content-pat{
     position: relative;
     top: 40px;
     display: flex;
     justify-content: space-between;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div#content-pat div.col-lg-2{
+div#content div#content-pat div.col-lg-2{
     background-color: white;
     display: flex;
     flex-direction: row;
     width: 20%;
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div#content-pat div.col-lg-2 span:first-of-type{
+div#content div#content-pat div.col-lg-2 span:first-of-type{
     padding-top: 15px;
     padding-left: 15px;
     display: flex;
@@ -209,7 +343,7 @@ div.row div.col-lg-12 div.col-lg-10 div#content div#content-pat div.col-lg-2 spa
     flex-direction: column;
     
 }
-div.row div.col-lg-12 div.col-lg-10 div#content div#content-pat div.col-lg-2 span:nth-child(n+2){
+div#content div#content-pat div.col-lg-2 span:nth-child(n+2){
     padding-top: 25px;
     padding-right: 10px;
     display: flex;
@@ -378,4 +512,86 @@ div#content-end div.col-lg-3.bg-success div div.progress-pat div.progress{
 }
 #content-border{
     background-image: none;
+}
+div#menu-cir{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right,#56BFBC ,#A2DCDA);
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    color: antiquewhite;
+    
+}
+div#menu-cir i.glyphicon-plus{
+    transition: all .5s;
+    transition-timing-function: linear;
+}
+div#menu-cir:hover .glyphicon-plus{
+    transform: rotate(855deg);
+}
+div#menu-cir div.center-align:first-of-type div{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2FA5;
+    anima-origin: center;
+    
+}
+div#menu-cir div.center-align.text-capitalize div{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    anima-origin: center;
+    background-color: #FF9E00;
+}
+div#menu-cir div.center-align:last-of-type div{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    anima-origin: center;
+    background-color: #870092;
+    color: antiquewhite;
+}
+.center-align{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height: 30px;
+    z-index: 9999;
+    position: absolute;
+}
+div#menu-cir div.center-align:first-of-type{
+    top: -50px;
+}
+div#menu-cir div.center-align.text-capitalize{
+    top: -90px;
+}
+div#menu-cir div.center-align:last-of-type{
+    top: -130px;
+}
+div#menu-cir div.text-center{
+    width: 30px;
+    height: 130px;
+    position: absolute;
+    top: -120px;
+    display: none;
 }

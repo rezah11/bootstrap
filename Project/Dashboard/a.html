@@ -5,84 +5,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="b.css" >
+    <link rel="stylesheet" href="www.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="scrollbox-master/dist/css/scrollbox.min.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row" >
-            <div class="col-lg-12" style="position: fixed">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="position: fixed">
                 <!--menu top-->
-                <div class="col-lg-2 col-md-4">
-                    <div class="col-lg-10"><a href="#">Swift Hospital</a></div>
-                    <div class="col-lg-12">
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="../../t3/kobe-bryant-wallpaper-widescreen-On-High-Resolution-Wallpaper.jpg" width="80px" height="80px" alt="ali"/>
+                <div class="col-lg-2 col-md-4 col-sm-5" style="z-index: 1;">
+                    <div class="col-lg-10 col-md-6 col-sm-6"><a href="#">Swift Hospital</a></div>
+                    <div class="col-lg-12 col-md-10 col-sm-10">
+                        <div class="col-lg-4 col-md-3 col-sm-2">
+                            <img class="img-circle" src="random-avatar7.jpg" width="80px" height="80px" alt="ali"/>
                         </div>
-                        <div class="col-lg-8">
-                            <p class="col-lg-12">Wellcome</p>
+                        <div class="col-lg-8 col-md-8 col-sm-10">
+                            <p class="col-lg-12 col-md-10">Wellcome</p>
                             <p>DR.John</p>
                             <div>
-                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
-                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
-                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
-                            <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-user"></i></a>
+                            <a href="#"><i class="fas fa-cog"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-log-out"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-10"><span>today report</span></div>
-                        <div class="col-lg-11">
-                            <div class="text-center col-lg-4"><p>16</p><p>patiant</p></div>
-                            <div class="text-center col-lg-4"><p>20</p><p>visit</p></div>
-                            <div class="text-center col-lg-4"><p>14</p><p>pending</p></div>
+                        <div class="col-lg-10 col-md-8"><span>today report</span></div>
+                        <div class="col-lg-11 col-md-8 col-sm-8">
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2"><p>16</p><p>patiant</p></div>
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2"><p>20</p><p>visit</p></div>
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2"><p>14</p><p>pending</p></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3">
+                <div class="col-lg-2 col-md-2 col-sm-3">
                     <input type="text" class="form-control" placeholder="Explore Swift ...">
                     
                 </div>
-                <div class="col-lg-8" id="top-menu">
-                        <i class="glyphicon glyphicon-adjust"><span class="badge align-top">5</span></i> 
-                        <i class="glyphicon glyphicon-adjust"><span class="badge">6</span></i> 
-                        <i class="glyphicon glyphicon-adjust"><span class="badge">7</span></i>                
-                </div>
                 <!--menu left-->
-               <div class="col-lg-12" id="down-menu">
-                <ul class="col-lg-2 navbar-header">
+               <div class="col-lg-12 col-md-12 col-sm-12" id="down-menu">
+                <ul class="col-lg-2 navbar-header col-md-4 col-sm-4">
                     <li><p>Main Navigation</p></li>
-                    <li><i class="glyphicon glyphicon-apple"></i><span>Dashboard</span><i class="glyphicon glyphicon-alert text-hide"></i></li>
+                    <li><i class="glyphicon glyphicon-home"></i><span>Dashboard</span><i class="glyphicon glyphicon-alert text-hide"></i></li>
                     <li data-toggle="collapse" data-target="#Doctor">
-                        <i class="glyphicon glyphicon-apple"></i><span>Doctors</span><i class="glyphicon glyphicon-plus"></i>
+                        <i class="fas fa-user-plus"></i><span>Doctors</span><i class="glyphicon glyphicon-plus"></i>
                     </li>
                     <div class="collapse" id="Doctor">
                         <ul>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>All Doctor</span></li>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>Profile</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>All Doctor</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Profile</span></li>
                         </ul>
                     
                     </div>
                     <li data-toggle="collapse" data-target="#Patiant">
-                        <i class="glyphicon glyphicon-apple"></i><span>Patiant</span><i class="glyphicon glyphicon-plus"></i>
+                        <i class="fas fa-user"></i><span>Patiant</span><i class="glyphicon glyphicon-plus"></i>
                     </li>
                     <div class="collapse" id="Patiant">
                         <ul>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>All Pattiant</span></li>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>Add Patiant</span></li>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>Patiant Profile</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>All Pattiant</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Add Patiant</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Patiant Profile</span></li>
                         </ul>
                     
                     </div>
                     <li data-toggle="collapse" data-target="#Extrapage">
-                        <i class="glyphicon glyphicon-apple"></i><span>Extra Pages</span><i class="glyphicon glyphicon-plus"></i>
+                        <i class="fas fa-file-alt"></i><span>Extra Pages</span><i class="glyphicon glyphicon-plus"></i>
                     </li>
                     <div class="collapse" id="Extrapage">
                         <ul>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>Log in</span></li>
-                            <li><i class="glyphicon glyphicon-apple"></i><span>Sign Up</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Log in</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Sign Up</span></li>
                         </ul>
                     
                     </div>
-                    <li><i class="glyphicon glyphicon-apple"></i><span>Report</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
-                    <li><i class="glyphicon glyphicon-apple"></i><span>widgets</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="fas fa-file-alt"></i><span>Report</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="fab fa-delicious"></i><span>widgets</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
                 </ul>
             </div>
             </div>         
@@ -90,41 +88,125 @@
                     <!--content-->
 
         <div class="row">
-            <div class="col-lg-12" id="content-border">
-             <div class=" col-lg-10">
-                    <div class="col-lg-12" id="content">
+             <div class="col-lg-10 col-md-10 col-sm-10" style="left: 15%; top: 50px;">
+                 <!--top menu-->
+                 <ul class="col-lg-8 col-md-8 col-sm-8" id="top-menu">
+                    <li class="dropdown"><i class="fas fa-bell dropdown-toggle icon1" data-toggle="dropdown"><span class="badge align-top">5</span></i>
+                      <ul class="dropdown-menu dropdown-menu-right bg-danger"  style="padding:0px;" id="note-drop">
+                            <li><p style="font-weight: bold;">Notfications</p></li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #2DE358"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div class="text-left"><div><span>12 New Member Joined</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #3832F9"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div class="text-left"><div><span>4 sale made</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #FB4548"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div class="text-left"><div><b>Nancy Doe</b><span class="bol">deleted account</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #D800D3"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div class="text-left"><div><span>Settings Updated</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #2B1FB7"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div class="text-left"><div><b>John</b><span class="bol">commented on your post</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">View All Notfications</a>                            
+                            </li>
+                        </ul>
+                     </li>
+                     <li class="dropdown"><i class="fas fa-flag dropdown-toggle icon1" data-toggle="dropdown"><span class="badge align-top">5</span></i>
+                       <ul class="dropdown-menu dropdown-menu-right" id="task-drop">
+                             <li>
+                                 <p>Tasks</p>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                    <div class="text-left">
+                                    <div><span>Task 1</span><span>35%</span></div>
+                                     <div class="progress"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 35%; height: 300px"></div></div>
+                                     </div>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                     <div class="text-left">
+                                        <div><span>Task 2</span><span>55%</span></div><div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%"></div></div>
+                                     </div>
+                                </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                 <div class="text-left">
+                                    <div><span>Task 3</span><span>15%</span></div><div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div></div>
+                                 </div>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                 <div class="text-left">
+                                    <div><span>Task 4</span><span>75%</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div>
+                                 </div>
+                                 </a>
+                             </li>
+                             <li style="height: 20px;"><a href="#" style="height: 20px;"><p>View All Tasks</p></a></li>
+                         </ul>
+                     </li>
+                    <li class="dropdown"><i class="fas fa-cog dropdown-toggle icon1" data-toggle="dropdown"><span class="badge align-top">5</span></i>
+                        <ul class="dropdown-menu dropdown-menu-right list-group ">
+                            <li class="list-group-item">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                     </li>
+                </ul>
+                    <div class="col-lg-12 col-md-12 col-sm-12" id="content">
                         <div class="col-lg-10">
                             <p>Dashboard</p>
                             <p> Welcome to Swift application </p>
                         </div>
                         <div class="col-lg-12" id="content-pat">
-                            <div class="col-lg-2">
+                            <div class="col-lg-2 col-sm-2">
                                 <span>
                                     <p>New Patient</p>
                                     <p>27</p>
                                 </span>
-                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                                <span><i class="fas fa-user text-primary"></i></span>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-2 col-sm-2">
                                 <span>
                                     <p>OPD Patient</p>
                                     <p>12</p>
                                 </span>
-                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                                <span><i class="fas fa-user text-success"></i></span>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-2 col-sm-2">
                                 <span>
                                     <p>Today's Operations</p>
                                     <p>05</p>
                                 </span>
-                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                                <span><i class="fas fa-bug text-danger"></i></span>
                             </div>
                             <div class="col-lg-2">
                                 <span>
                                     <p>Hospital Earning</p>
                                     <p>$3,540</p>
                                 </span>
-                                <span><i class="glyphicon glyphicon-alert"></i></span>
+                                <span><i class="fas fa-coins text-warning"></i></span>
                             </div>
                         </div>
                         <div class="col-lg-12" id="content-chart">
@@ -136,10 +218,10 @@
                                     </div>
                         </div>
                         <div class="col-lg-12" id="content-chart2">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-3">
                                 <div>
                                     <p>NEW PATIANT
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
                                     </p>
                                     <p>18% High then last month</p>
                                     
@@ -162,10 +244,10 @@
                                     <canvas></canvas>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-3">
                                 <div>
                                     <p>Heart Surgeries 
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
                                             
                                     </p>
                                     <p>18% High then last month</p>
@@ -189,10 +271,10 @@
                                     <canvas></canvas>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-3">
                                 <div>
                                     <p>Medical Treatment 
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-alert"></i></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
                                             
                                     </p>
                                     <p>18% High then last month</p>
@@ -220,7 +302,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-12" id="content-tbl">
                                 <div>
-                                    <p>New Patient List <a href="#"><i class="glyphicon glyphicon-alert"></i></a></p>
+                                    <p>New Patient List <a href="#"><i class="fas fa-ellipsis-v"></i></a></p>
                                     <p>Description text here...</p>
                                 </div>
                                 <div class="table-responsive">
@@ -283,8 +365,8 @@
                             </div>
                         </div>
                         <div class="col-lg-12" id="content-end">
-                            <div class="col-lg-3 bg-danger">                                    
-                                <p>Patient Prograss <a href="#"><i class="glyphicon glyphicon-alert"></i></a>
+                            <div class="col-lg-3 bg-danger col-md-3">                                    
+                                <p>Patient Prograss <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                                 </p>
                                 <div>
                                     <span>Mark Otto</span><span class="label label-danger text-center">21%</span>
@@ -305,8 +387,8 @@
                                     <span>M. Arthur </span><span class="label label-success text-center">91%</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 bg-primary">
-                              <p>Patient Prograss <a href="#"><em class="glyphicon glyphicon-alert"></em></a> </p>
+                            <div class="col-lg-3 bg-primary col-md-3">
+                              <p>Patient Prograss <a href="#"><i class="fas fa-ellipsis-v"></i></a> </p>
                                 <div class="table-responsive">
                                     <table class="table " style="position= relative;top=200px;">
                                         <thead>
@@ -340,8 +422,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-lg-3 bg-success" id="sad">
-                                <p>Visits from countries <a href="#"><em class="glyphicon glyphicon-alert"></em></a> </p>
+                            <div class="col-lg-3 bg-success col-md-3">
+                                <p>Visits from countries <a href="#"><i class="fas fa-ellipsis-v"></i></a> </p>
                                 <div>
                                     <div class="progress-pat">
                                         <div><span>6350</span><span>From India 58%</span></div>
@@ -366,15 +448,93 @@
                     </div>
                     
                 </div>
-        </div>
             </div>
+            <div id="menu-cir"><i class="glyphicon glyphicon-plus"></i>
+                <div class="center-align" id="Payment"><div class="bg-primary d1"><i class="far fa-calendar-alt"></i></div></div>
+                <div class="text-center"></div>
+                <div class="center-align text-capitalize" id="Patiant List"><div class="bg-warning d1"><i class="glyphicon glyphicon-user"></i></div></div>
+                <div class="center-align" id="Doctor Schedule"><div class="bg-success d1"><i class="fas fa-money-bill-alt"></i></div></div>
+        </div>
     </div>
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#down-menu ul.col-lg-2").mouseover(function() {
+            $("#down-menu ul.col-lg-2").niceScroll().resize();
+        });
+        $("#down-menu ul.col-lg-2").scroll(function() {
+            $("#down-menu ul.col-lg-2").niceScroll().resize();
+        });
+        $("#task-drop").mouseover(function() {
+            $("#task-drop").niceScroll().resize();
+        });
+        $("#note-drop").mouseover(function(){
+            $("#note-drop").niceScroll().resize();
+        });
+        $('.dropdown-toggle').dropdown(); 
+        $("#menu-cir").css({"top":window.innerHeight, "left":"92%"});
+        $("#menu-cir").animate({"top":window.innerHeight-100},600,"swing");
+       $(window).resize(function() {
+        $("#menu-cir").css({"top":window.innerHeight-50});
+           
+       });
+        $("#menu-cir").hover(function() {
+            $( ".d1" ).stop();
+            $(".center-align").css({"display":"flex"});
+            $("div#menu-cir div.text-center").css({"display":"block"});
+        $("#menu-cir").css({"top":window.innerHeight-100});
+          $( ".d1" ).animate({
+            width: "30px",
+            height: "30px",
+              fontSize:"12px"
+          }, 700, function() {
+              
+          });
+                },function(){
+            $( ".d1" ).stop();
+            $( ".d1" ).animate({
+            width: "0px",
+            height: "0px",
+            fontSize:"0px"
+          }, 700, function() {
+        $(".center-align").css({"display":"none"});
+         $("div#menu-cir div.text-center").css({"display":"none"});
+          });
+        });
+        $(".center-align").hover(function() {
+            var thisdiv=$(this);
+            console.log(thisdiv.inex);
+            var y=parseInt(thisdiv.css('top'));
+            console.log(y);
+            $("#divv").remove();
+            var x=$("<div id='divv'></div>").text(thisdiv.attr('id')).css({"position":"absolute","right":"350%","display":"none","zIndex":"99999","color":"white","backgroundColor":"#4E4B4B","width":"400%","height":"30px","borderRadius":"20px","opacity":"0.7"});
+            
+            thisdiv.append(x);
+            $("#divv").hide().fadeIn(300);
+        },function(){
+            var thisdiv=$(this);
+            $("#divv").fadeOut(600);
+        }
+         );
+        $("#down-menu ul li").not(":eq(0)").click(function(){
+            
+        $( this ).animate({
+          backgroundColor: "#212020"
+        }, 500,'linear').animate({backgroundColor: "#353434"},300,'linear');
+      
+      
+        });
+    });
+    </script>
     <script src="Chart.bundle.min.js"></script>
     <script type="text/javascript" src="jquery.sparkline.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script type="text/javascript">
+    
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script type="text/javascript">            
         $(function() {
 
         var myvalues = [30,25,10,20,36,4,19];
