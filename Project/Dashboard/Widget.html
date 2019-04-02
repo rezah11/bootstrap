@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>:: Hospital - Admin ::</title>
+    <link rel="icon" type="image/x-icon" href="pics/images.png" sizes="HeightxWidth|any"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="Widget.css" >
+    <link rel="stylesheet" href="www.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="scrollbox-master/dist/css/scrollbox.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="lt-menu1">
+                <!--menu top-->
+                <div class="col-lg-2 col-md-4 col-sm-5 col-xs-6" style="z-index: 1;" id="lt-menu">
+                    <div class="col-lg-10 col-md-6 col-sm-6 col-xs-10"><a href="#">Swift Hospital</a></div>
+                    <div class="col-lg-12 col-md-10 col-sm-10 col-xs-11">
+                        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-4">
+                            <img class="img-circle" src="random-avatar7.jpg" width="80px" height="80px" alt="ali"/>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-8" id="link-top1">
+                            <p class="col-lg-12 col-md-10">Wellcome</p>
+                            <p>DR.John</p>
+                            <div id="link-top">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-user"></i></a>
+                            <a href="#"><i class="fas fa-cog"></i></a>
+                            <a href="#"><i class="glyphicon glyphicon-log-out"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-xs-10"><span>today report</span></div>
+                        <div class="col-lg-11 col-md-8 col-sm-8 col-xs-12">
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2 col-xs-5"><p>16</p><p>patiant</p></div>
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2 col-xs-5"><p>20</p><p>visit</p></div>
+                            <div class="text-center col-lg-4 col-md-3 col-sm-2 col-xs-5"><p>14</p><p>pending</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1" id="xsmenu"><a href="#"><i class="fas fa-bars"></i></a></div>
+              <div class="col-lg-2 col-md-2 col-sm-3 col-xs-1" id="search">
+                    <input type="text" class="form-control" placeholder="Explore Swift ...">
+                    
+                </div>
+                <!--menu left-->
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-8" id="down-menu">
+                <ul class="col-lg-2 navbar-header col-md-4 col-sm-2 col-xs-8" id="ul-down">
+                    <li><p>Main Navigation</p></li>
+                    <li><i class="glyphicon glyphicon-home"></i><a href="index.html">Dashboard</a><i class="glyphicon glyphicon-alert text-hide"></i></li>
+                    <li data-toggle="collapse" data-target="#Doctor"> <i class="fas fa-user-plus"></i><span>Doctors</span><i class="glyphicon glyphicon-plus" data_temp_dwid="4"></i> </li>
+                    <div class="collapse" id="Doctor">
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><a href="AllDoctor.html">All Doctor</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="DoctorProfile.html">Profile</a></li>
+                        </ul>
+                    
+                    </div>
+                    <li data-toggle="collapse" data-target="#Patiant">
+                        <i class="fas fa-user"></i><span>Patiant</span><i class="glyphicon glyphicon-plus"></i>
+                    </li>
+                    <div class="collapse" id="Patiant">
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><a href="AddPatiant.html">All Pattiant</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="AddPatiant.html">Add Patiant</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="PatiantProfile.html">Patiant Profile</a></li>
+                        </ul>
+                    
+                    </div>
+                    <li data-toggle="collapse" data-target="#Extrapage">
+                        <i class="fas fa-file-alt"></i><span>Extra Pages</span><i class="glyphicon glyphicon-plus"></i>
+                    </li>
+                    <div class="collapse" id="Extrapage">
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><a href="login.html">Log in</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="signup.html">Sign Up</a></li>
+                        </ul>
+                    
+                    </div>
+                    <li><i class="fas fa-file-alt"></i><a href="Report.html">Report</a><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="fab fa-delicious"></i><a href="Widget.html">widgets</a><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                </ul>
+            </div>
+            </div>         
+        </div>
+                    <!--content-->
+
+        <div class="row">
+             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="top-menu1">
+                 <!--top menu-->
+                 <ul class="col-lg-8 col-md-8 col-sm-8 col-xs-7" id="top-menu">
+                    <li class="dropdown"><i class="fas fa-bell dropdown-toggle icon1" data-toggle="dropdown"><span class="badge align-top">5</span></i>
+                      <ul class="dropdown-menu dropdown-menu-right bg-danger"  style="padding:0px;" id="note-drop">
+                            <li><p style="font-weight: bold;">Notfications</p></li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #2DE358"><i class="fas fa-user-plus"></i></div></div>
+                                    <div class="text-left"><div><span>12 New Member Joined</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #3832F9"><i class="fas fa-shopping-cart"></i></div></div>
+                                    <div class="text-left"><div><span>4 sale made</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #FB4548"><i class="fas fa-trash"></i></div></div>
+                                    <div class="text-left"><div><b>Nancy Doe</b><span class="bol">deleted account</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #D800D3"><i class="fas fa-sync-alt"></i></div></div>
+                                    <div class="text-left"><div><span>Settings Updated</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div><div style="background-color: #2B1FB7"><i class="fas fa-comment-dots"></i></div></div>
+                                    <div class="text-left"><div><b>John</b><span class="bol">commented on your post</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">View All Notfications</a>                            
+                            </li>
+                        </ul>
+                     </li>
+                     <li class="dropdown"><i class="fas fa-flag dropdown-toggle icon1" data-toggle="dropdown"><span class="badge align-top">5</span></i>
+                       <ul class="dropdown-menu dropdown-menu-right" id="task-drop">
+                             <li>
+                                 <p>Tasks</p>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                    <div class="text-left">
+                                    <div><span>Task 1</span><span>35%</span></div>
+                                     <div class="progress"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 35%; height: 300px"></div></div>
+                                     </div>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                     <div class="text-left">
+                                        <div><span>Task 2</span><span>55%</span></div><div class="progress"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%"></div></div>
+                                     </div>
+                                </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                 <div class="text-left">
+                                    <div><span>Task 3</span><span>15%</span></div><div class="progress"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"></div></div>
+                                 </div>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="#">
+                                 <div class="text-left">
+                                    <div><span>Task 4</span><span>75%</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div>
+                                 </div>
+                                 </a>
+                             </li>
+                             <li style="height: 20px;"><a href="#" style="height: 20px;"><p>View All Tasks</p></a></li>
+                         </ul>
+                     </li>
+                    <li class="dropdown"><i class="fas fa-cog dropdown-toggle icon1" data-toggle="dropdown"></i>
+                     </li>
+                </ul>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="content">
+                        <div class="col-lg-10">
+                            <p>Widget</p>
+                            <p> Welcome to Swift application </p>
+                        </div>
+                         <div  class="col-lg-12" id="progress-widget">
+                            <div class="col-lg-3">
+                                <div class="col-lg-12">
+                                    <h3>50.5 Gb</h3>
+                                    <h5>Traffic this month</h5>
+                                    <div class="progress"> 
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                        </div> 
+                                    </div>
+                                    <h6>4% higher than last month</h6>
+                                </div>
+                             </div>
+                             <div class="col-lg-3">
+                                <div class="col-lg-12">
+                                 <h3>26.8%</h3>
+                                    <h5>Server Load</h5>
+                                    <div class="progress"> 
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                        </div> 
+                                    </div>
+                                    <h6>4% higher than last month</h6>
+                                 </div>
+                             </div>
+                             <div class="col-lg-3">
+                                <div class="col-lg-12">
+                                 <h3>$ 14,500</h3>
+                                    <h5>Total Sale</h5>
+                                    <div class="progress"> 
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                        </div> 
+                                    </div>
+                                    <h6>15% higher than last month</h6>
+                                 </div>
+                             </div>
+                             <div class="col-lg-3">
+                                <div class="col-lg-12">
+                                 <h3>1,600</h3>
+                                    <h5>Total Feedbacks</h5>
+                                    <div class="progress"> 
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                        </div> 
+                                    </div>
+                                    <h6>10% higher than last month</h6>
+                                 </div>
+                             </div>
+                             <div class="col-lg-7" id="table-patiant-s">
+                                 <div class="col-lg-12">
+                                     <div>
+                                         <span>Patiant Status</span>
+                                         <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                     </div>
+                                     <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Patiant</th>
+                                                    <th>Name</th>
+                                                    <th>Address</th>
+                                                    <th class="fit">Start Date</th>
+                                                    <th>Priority</th>
+                                                    <th>Progress</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><h5>1</h5></td>
+                                                    <td><img class="img-circle" src="pics/avatar1.jpg" width="30px" height="30px"></td>
+                                                    <td><h5>John</h5></td>
+                                                    <td class="fit"><h4>70 Bowman St. South Windsor, CT 06074</h4></td>
+                                                    <td class="fit"><h5>Sept 13, 2017</h5></td>
+                                                    <td><span class="label label-warning">Medium</span></td>
+                                                    <td>
+                                                        <div class="progress"> 
+                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                                            </div> 
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="label label-success">admit</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>2</h5></td>
+                                                    <td><img class="img-circle" src="pics/avatar2.jpg" width="30px" height="30px"></td>
+                                                    <td><h5>Jack Bird</h5></td>
+                                                    <td class="fit"><h4> 	123 6th St. Melbourne, FL 32904</h4></td>
+                                                    <td class="fit"><h5>Sept 13, 2017</h5></td>
+                                                    <td><span class="label label-warning">Medium</span></td>
+                                                    <td>
+                                                        <div class="progress"> 
+                                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%"> 
+                                                            </div> 
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="label label-danger">discharge</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>3</h5></td>
+                                                    <td><img class="img-circle" src="pics/avatar3.jpg" width="30px" height="30px"></td>
+                                                    <td><h5>Dean Otto</h5></td>
+                                                    <td class="fit"><h4>123 6th St. Melbourne, FL 32904</h4></td>
+                                                    <td class="fit"><h5>Sept 23, 2017</h5></td>
+                                                    <td><span class="label label-warning">Medium</span></td>
+                                                    <td>
+                                                        <div class="progress"> 
+                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 
+                                                            </div> 
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="label label-success">admit</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>4</h5></td>
+                                                    <td><img class="img-circle" src="pics/avatar4.jpg" width="30px" height="30px"></td>
+                                                    <td><h5>Jack Bird</h5></td>
+                                                    <td class="fit"><h4>4 Shirley Ave. West Chicago, IL 60185</h4></td>
+                                                    <td class="fit"><h5>Sept 16, 2017</h5></td>
+                                                    <td><span class="label label-success">low</span></td>
+                                                    <td>
+                                                        <div class="progress"> 
+                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> 
+                                                            </div> 
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="label label-danger">Dicsharge</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>5</h5></td>
+                                                    <td><img class="img-circle" src="pics/avatar5.jpg" width="30px" height="30px"></td>
+                                                    <td><h5>Hughe L.</h5></td>
+                                                    <td class="fit"><h4>4 Shirley Ave. West Chicago, IL 60185</h4></td>
+                                                    <td class="fit"><h5>Sept 18, 2017</h5></td>
+                                                    <td><span class="label label-danger">high</span></td>
+                                                    <td>
+                                                        <div class="progress"> 
+                                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%"> 
+                                                            </div> 
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="label label-success">admit</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                 </div>
+                        </div>                  
+                        </div>
+                             <div class="col-lg-5" id="table-patiant-report">
+                                <div class="col-lg-12">
+                                    <div>
+                                        <span>Patiant Status</span>
+                                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                    </div>
+                                    <div class="table-responsive">
+                                    <table class="table " style="position= relative;top=200px;">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Firstname</th>
+                                                <th>Chart</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Dean Otto</td>
+                                                <td><span class="dynamicbar"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>K. Thornton</td>
+                                                <td><span class="dynamicbar1"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Kane D.</td>
+                                                <td><span class="dynamicbar2"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Jack Bird</td>
+                                                <td><span class="dynamicbar3"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Hughe L.</td>
+                                                <td><span class="dynamicbar4"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Hughe L.</td>
+                                                <td><span class="dynamicbar4"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A011</td>
+                                                <td>Hughe L.</td>
+                                                <td><span class="dynamicbar4"></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                             </div>
+                             <div class="col-lg-12" id="table-recent-sale">
+                                 <div class="col-lg-12">
+                                     <div>
+                                        <span>Patiant Status</span>
+                                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                    </div>
+                                     <div>
+                                        <span class="text-danger">Patiant Status</span>
+                                    </div>
+                                     <div>
+                                        <span class="text-primary">Sale Report</span>
+                                        <span class="text-success">$4,231</span>
+                                    </div>
+                                     <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th> Date</th>
+                                                    <th>price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><h5>1</h5></td>
+                                                    <td><h5>Ipsum is simply</h5></td>
+                                                    <td>
+                                                            <div class="label label-danger" style="display: unset!important;">Sale</div>
+                                                    </td>
+                                                    <td><h5>Feb 11, 2017</h5></td>
+                                                    <td><h4 class="text-success">$25</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>2</h5></td>
+                                                    <td><h5>Lorem Ipsum is</h5></td>
+                                                    <td>
+                                                            <div class="label label-primary" style="display: unset!important;">EXTENDED</div>
+                                                    </td>
+                                                    <td><h5>March 29, 2017</h5></td>
+                                                    <td><h4 class="text-success">$1234</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>3</h5></td>
+                                                    <td><h5>Lorem Ipsum is simply</h5></td>
+                                                    <td>
+                                                            <div class="label label-danger" style="display: unset!important;">TAX</div>
+                                                    </td>
+                                                    <td><h5>April 21, 2017</h5></td>
+                                                    <td><h4 class="text-danger">-$204</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>4</h5></td>
+                                                    <td><h5>Hosting press htmlohn</h5></td>
+                                                    <td>
+                                                            <div class="label label-warning" style="display: unset!important;">sale</div>
+                                                    </td>
+                                                    <td><h5>Jun 22, 2017</h5></td>
+                                                    <td><h4 class="text-success">$24</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>5</h5></td>
+                                                    <td><h5>Lorem is simply</h5></td>
+                                                    <td>
+                                                            <div class="label label-success" style="display: unset!important;">member</div>
+                                                    </td>
+                                                    <td><h5>July 20, 2017</h5></td>
+                                                    <td><h4 class="text-success">$21</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>6</h5></td>
+                                                    <td><h5>Lorem Ipsum simply</h5></td>
+                                                    <td>
+                                                            <div class="label label-success" style="display: unset!important;">SALE</div>
+                                                    </td>
+                                                    <td><h5>July 21, 2017</h5></td>
+                                                    <td><h4 class="text-danger">-$12</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h5>7</h5></td>
+                                                    <td><h5>Lorem Ipsum is simply</h5></td>
+                                                    <td>
+                                                            <div class="label label-warning" style="display: unset!important;">member</div>
+                                                    </td>
+                                                    <td><h5>July 21, 2017</h5></td>
+                                                    <td><h4 class="text-success">$54</h4></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                 </div>
+                                 </div>
+                             </div>
+                        </div>
+                </div>
+            </div>
+            <div id="menu-cir"><i class="glyphicon glyphicon-plus"></i>
+                <div class="center-align" id="Payment"><div class="bg-primary d1"><i class="far fa-calendar-alt"></i></div></div>
+                <div class="text-center"></div>
+                <div class="center-align text-capitalize" id="Patiant List"><div class="bg-warning d1"><i class="glyphicon glyphicon-user"></i></div></div>
+                <div class="center-align" id="Doctor Schedule"><div class="bg-success d1"><i class="fas fa-money-bill-alt"></i></div></div>
+        </div>
+    </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="c.js">
+    </script>
+    <script type="text/javascript" src="jquery.sparkline.min.js"></script>
+    <script type="text/javascript">            
+        $(function() {
+
+        var myvalues = [30,25,10,20,36,4,19];
+
+        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: '#4642C9',} );
+            var myvalues1 = [10,4,26,38,18,14,29];
+
+        $('.dynamicbar1').sparkline(myvalues1, {type: 'bar', barColor: '#4642C9',} );
+            var myvalues2 = [15,25,5,12,35,3,38];
+
+        $('.dynamicbar2').sparkline(myvalues2, {type: 'bar', barColor: '#4642C9',} );
+            var myvalues3 = [18,30,3,36,12,22,40];
+
+        $('.dynamicbar3').sparkline(myvalues3, {type: 'bar', barColor: '#4642C9',} );
+            var myvalues4 = [12,1,36,16,30,24,19];
+
+        $('.dynamicbar4').sparkline(myvalues4, {type: 'bar', barColor: '#4642C9',} );
+
+    });
+</script>
+    <div style="display: block" id="hideAll"><div class="container"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><div>loading ...</div></div></div>
+    <script>
+      window.onload = function() 
+ { 
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+ document.getElementById("hideAll").style.display = "none";
+}, delayInMilliseconds); }
+
+    </script>
+        <script src="jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
+
+</body>
+</html>

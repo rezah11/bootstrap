@@ -11,7 +11,9 @@
             $(this).css({"backgroundImage":"none","color":"#474747"});
         });
                     var xxx=true;
+       // $("body").css({"height":$(window).height()});
         $(window).resize(function(){
+          //  $("body").css({"height":$(window).height()});
            if(window.innerWidth>767){
                $("#lt-menu").animate({"left":"0%"});
             $("#down-menu").animate({"left":"0%"});

@@ -14,6 +14,15 @@ body{
 #xsmenu a{
     color: aliceblue;
 }
+@media screen and (max-width:1195px) {
+    #linktop1{
+        position: relative;
+        left: 20%;
+    }
+    #link-top a:nth-child(n+2) {
+    margin-left: 5px;
+}
+}
 @media screen and (max-width:767px){
     #lt-menu{
         left:-100% ;
@@ -29,6 +38,7 @@ body{
         background-color: #353434;
         width: 75.04%;
         top: -40px;
+      /*add*/  z-index: 9999;
     }
     #content{
         left: 0%;
@@ -186,7 +196,7 @@ ul#task-drop {
     z-index: 99999;
     overflow-y: hidden;
     height: 200px;
-    padding: 0px;
+    padding-right: 40%;
     width: 600%;
 }
 ul#task-drop li :first-of-type{
@@ -328,7 +338,6 @@ div.row div.col-lg-12#down-menu ul.col-lg-2 li{
     flex-grow: 0;
     height: 50px;
     padding-left: 10%;
-
 }
 div.row div.col-lg-12#down-menu ul.col-lg-2 :not(:first-of-type){
     cursor: pointer;
@@ -648,4 +657,67 @@ div#menu-cir div.text-center{
     position: absolute;
     top: -120px;
     display: none;
+}
+div#hideAll{
+    position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: #F3F3F3;
+   z-index: 999999;
+}
+div#hideAll div.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #099D94;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #099D94 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#ul-down a{
+    color: inherit!important;
+    text-decoration:none!important;
+}
+#ul-down a:hover {
+  color: inherit!important;
+  text-decoration: none!important;
+}
+#ul-down a:link {
+  color: inherit!important;
+  text-decoration: none!important;
 }

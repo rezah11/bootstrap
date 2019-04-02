@@ -15,6 +15,24 @@ body{
 #xsmenu a{
     color: aliceblue;
 }
+@media screen and (max-width:1195px) {
+    #linktop1{
+        position: relative;
+        left: 20%;
+    }
+    #link-top a:nth-child(n+2) {
+    margin-left: 5px;
+}
+}
+@media screen and (max-width:1195px) {
+    #linktop1{
+        position: relative;
+        left: 20%;
+    }
+    #link-top a:nth-child(n+2) {
+    margin-left: 5px;
+}
+}
 @media screen and (max-width:767px){
     #lt-menu{
         left:-100% ;
@@ -30,6 +48,7 @@ body{
         background-color: #353434;
         width: 75.04%;
         top: -40px;
+        z-index: 9999;
     }
     #content{
         left: 0%;
@@ -187,7 +206,7 @@ ul#task-drop {
     z-index: 99999;
     overflow-y: hidden;
     height: 200px;
-    padding: 0px;
+    padding-right: 40%;
     width: 600%;
 }
 ul#task-drop li :first-of-type{
@@ -361,8 +380,8 @@ div.row div.col-lg-12 div.col-lg-10{
  div#content{
     background-color: #F3F3F3;
     background-image: none;
-    height: 2100px;
     position: absolute;
+     padding-bottom: 30px;
 }
 div#content div.col-lg-10 p:first-of-type{
     background-image: none;
@@ -456,15 +475,34 @@ div#content div.col-lg-10 p:nth-child(n+2){
 .leftpadd{
     padding-left: 5%;
     border-radius: 5px;
-    padding-top: 1px;
+    padding-top: 10px;
     margin-top: 15px;
+    padding-right: 4%;
     position: relative;
     background-color: white;
     padding-bottom: 10px;
 }
-#pro-state ul{
-    list-style: none;
+#pro-state{
+    padding: 2px 4% 10px 4%;
+}
+#pro-state h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+#pro-state h5{
+    margin-top: 15px;
+    font-weight: bold;
+    color: #222222;
+    font-size: 14px;
     padding: 0px;
+}
+#pro-state h6{
+    font-weight: 500;
+    font-size: 12px;
+    color: #616060;
+}
+#pro-state div{
+    border-top: 1px solid #CDCDCD;
 }
 textarea.form-control {
     border: none;
@@ -553,6 +591,9 @@ div.act p{
     position: relative;
     justify-content: space-between;
 }
+#content .col-lg-4 img{
+    margin-top: 20px;
+}
 #menu2 .ppinp:last-of-type{
     top: 10px
 }
@@ -588,19 +629,6 @@ div.act p{
     top: 50px;
     padding: 0px;
 }
-
-div#set{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 130px;
-}
-div#set div:first-of-type{
-    top: 0px;
-}
-div#set div:nth-child(n+2){
-    top: 0px;
-}
 #menu2 h5{
     position: relative;
     top: 70px;
@@ -611,6 +639,34 @@ div#set div:nth-child(n+2){
 #menu2 button#lastbutton{
     position: relative;
     top: 90px;
+}
+#home div:first-of-type h6{
+    font-size: 14px;
+}
+.borderbut{
+    border-bottom: 1px solid #CDCDCD;
+}
+#home div h6{
+    color:  #464646;
+    padding-right: 0px;
+}
+#home div h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+#home div ul:not(#ul-progress){
+    padding-left: 2%;
+}
+#ul-progress{
+    list-style-type: none;
+    padding-left: 0px;
+}
+#ul-progress div.progress{
+    height: 10px;
+}
+#set div.parent-inp:last-of-type{
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 div#menu-cir{
     width: 50px;
@@ -693,4 +749,67 @@ div#menu-cir div.text-center{
     position: absolute;
     top: -120px;
     display: none;
+}
+div#hideAll{
+    position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: #F3F3F3;
+   z-index: 999999;
+}
+div#hideAll div.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #099D94;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #099D94 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#ul-down a{
+    color: inherit!important;
+    text-decoration:none!important;
+}
+#ul-down a:hover {
+  color: inherit!important;
+  text-decoration: none!important;
+}
+#ul-down a:link {
+  color: inherit!important;
+  text-decoration: none!important;
 }

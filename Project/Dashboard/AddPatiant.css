@@ -388,59 +388,75 @@ div#content div.col-lg-10 p:nth-child(n+2){
     font-size: 10px;
     color: #363636;
 }
-div#content-card{
-    margin-left: 0%;
+#content-form{
+    margin: 0px;
+    background-color: white;
+    padding-bottom: 20px;
     position: relative;
     top: 30px;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
 }
-div#content-card div.card:nth-child(4n+1){
-    position: relative;
-    background-color: white;
-    width: 21%;
-    margin-top: 3%;
-    border-radius: 5px;
+#content-form div.col-lg-12{
+    background-image: none;
+    height: auto;
 }
-div#content-card div.card:not(:nth-child(4n+1)){
-    position: relative;
-    background-color: white;
-    margin-left: 3%;
-    width: 21%;
-    margin-top: 3%;
-    border-radius: 5px;
+#content-form div.col-lg-4{
+    margin-top: 20px;
 }
-div.card div.card-header{
-    padding-top: 30px;
+#content-form div.col-lg-3{
+    margin-top: 20px;
 }
-div.card div.card-body{
-    padding-bottom: 30px;
+textarea{
+    resize: none;
 }
-div.card div.card-body h3{ 
+#content-form h2{
+    font-size: 19px;
     font-weight: bold;
 }
-div.card div.card-body a{
-    position: relative;
-    top: -10px;
+#content-form h6{
+    font-size: 13px;
+    font-weight: 500;
+    color: #4B4B4B;
 }
-div.card div.card-body div a:nth-child(n+2){
-    position: relative;
-    top: 10px;
-    margin-left: 9%;
-    color: #3E83BB;
-    font-size: 17px;
+.form-control{
+    border: none;
+    overflow: auto;
+    border: 0px;
+  padding: 4px 0;
+    outline: none;
+  border-bottom: 1px solid #ccc;
+    box-shadow:none;
+    border-radius: 0px;
 }
-div.card div.card-body div a:first-of-type{
-    position: relative;
-    top: 10px;
-    margin-left: 0%;
-    color: #3E83BB;
-    font-size: 17px;
-    
+.form-control:focus {   
+  box-shadow:none;
+  outline: 0 none;
 }
-#content-border{
-    background-image: none;
+.form-control ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #43A5AD; transition: 0.4s;}
+.form-control:focus ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}
+.btn-gr{
+    position: relative;
+    top: 20px;
+}
+#textare{
+    margin-top: 20px;
+}
+#content-form button{
+    margin-top: 20px;
+}
+#content-form button.btn-danger{
+    background-image: linear-gradient(to right,#56BFBC ,#A2DCDA);
+    border: none;
+}
+#content-form button.btn-success{
+    background-image: linear-gradient(to right,#EEEAEA ,#EDE3E3);
+    color:black;
+    border: none;
+}
+#content-form div.col-lg-6{
+    margin-top: 20px;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
 }
 div#menu-cir{
     width: 50px;

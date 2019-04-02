@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>:: Hospital - Admin ::</title>
+    <link rel="icon" type="image/x-icon" href="pics/images.png" sizes="HeightxWidth|any"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css" >
+    <link rel="stylesheet" href="www.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="scrollbox-master/dist/css/scrollbox.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-4 col-md-6 col-xs-9">
+            <span id="border-l"></span>
+            <div id="border-t"></div>
+            <div id="gradiant"></div>
+            <h3>Swift Hospital</h3>
+            <h4>Login</h4>
+            <h5>Sign in to start your session</h5>
+            <form>
+                <div class="input-group">
+                    <span class = "input-group-addon"><i class="fas fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Username">
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-addon"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Password">
+                    <span class="focus-border"></span>
+                </div>
+                <section style="padding: 0px">
+                        <input id="one" type="checkbox" style="display: none" />
+                      <label for="one" > <span></span> Remember Me</label>
+                  </section>
+                <div class="btn-block">
+                    <button class="btn btn-primary">Sign in</button>
+                    <button class="btn btn-primary">Sign up</button>
+                </div>
+                
+                    <div>
+                    <a href="#">Forget Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="c.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".container").css({"height":$(window).height()});
+        $(window).resize(function(){
+          $(".container").css({"height":$(window).height()});
+        });
+        });
+    </script>
+</body>
+</html>

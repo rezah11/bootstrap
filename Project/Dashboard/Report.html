@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Practice</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>:: Hospital - Admin ::</title>
+    <link rel="icon" type="image/x-icon" href="pics/images.png" sizes="HeightxWidth|any"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="b.css" >
+    <link rel="stylesheet" href="Report.css" >
     <link rel="stylesheet" href="www.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="scrollbox-master/dist/css/scrollbox.min.css" media="screen" rel="stylesheet" type="text/css">
 </head>
@@ -21,10 +22,10 @@
                         <div class="col-lg-4 col-md-3 col-sm-2 col-xs-4">
                             <img class="img-circle" src="random-avatar7.jpg" width="80px" height="80px" alt="ali"/>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-8">
+                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-8" id="link-top1">
                             <p class="col-lg-12 col-md-10">Wellcome</p>
                             <p>DR.John</p>
-                            <div>
+                            <div id="link-top">
                             <a href="#"><i class="fas fa-envelope"></i></a>
                             <a href="#"><i class="fas fa-user"></i></a>
                             <a href="#"><i class="fas fa-cog"></i></a>
@@ -48,12 +49,12 @@
                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-8" id="down-menu">
                 <ul class="col-lg-2 navbar-header col-md-4 col-sm-2 col-xs-8" id="ul-down">
                     <li><p>Main Navigation</p></li>
-                    <li><i class="glyphicon glyphicon-home"></i><span>Dashboard</span><i class="glyphicon glyphicon-alert text-hide"></i></li>
+                    <li><i class="glyphicon glyphicon-home"></i><a href="index.html">Dashboard</a><i class="glyphicon glyphicon-alert text-hide"></i></li>
                     <li data-toggle="collapse" data-target="#Doctor"> <i class="fas fa-user-plus"></i><span>Doctors</span><i class="glyphicon glyphicon-plus" data_temp_dwid="4"></i> </li>
                     <div class="collapse" id="Doctor">
                         <ul>
-                            <li><i class="fas fa-angle-right"></i><span>All Doctor</span></li>
-                            <li><i class="fas fa-angle-right"></i><span>Profile</span></li>
+                            <li><i class="fas fa-angle-right"></i><a href="AllDoctor.html">All Doctor</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="DoctorProfile.html">Profile</a></li>
                         </ul>
                     
                     </div>
@@ -62,9 +63,9 @@
                     </li>
                     <div class="collapse" id="Patiant">
                         <ul>
-                            <li><i class="fas fa-angle-right"></i><span>All Pattiant</span></li>
-                            <li><i class="fas fa-angle-right"></i><span>Add Patiant</span></li>
-                            <li><i class="fas fa-angle-right"></i><span>Patiant Profile</span></li>
+                            <li><i class="fas fa-angle-right"></i><a href="AddPatiant.html">All Pattiant</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="AddPatiant.html">Add Patiant</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="PatiantProfile.html">Patiant Profile</a></li>
                         </ul>
                     
                     </div>
@@ -73,13 +74,13 @@
                     </li>
                     <div class="collapse" id="Extrapage">
                         <ul>
-                            <li><i class="fas fa-angle-right"></i><span>Log in</span></li>
-                            <li><i class="fas fa-angle-right"></i><span>Sign Up</span></li>
+                            <li><i class="fas fa-angle-right"></i><a href="login.html">Log in</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="signup.html">Sign Up</a></li>
                         </ul>
                     
                     </div>
-                    <li><i class="fas fa-file-alt"></i><span>Report</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
-                    <li><i class="fab fa-delicious"></i><span>widgets</span><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="fas fa-file-alt"></i><a href="Report.html">Report</a><i class="glyphicon glyphicon-plus text-hide"></i></li>
+                    <li><i class="fab fa-delicious"></i><a href="Widget.html">widgets</a><i class="glyphicon glyphicon-plus text-hide"></i></li>
                 </ul>
             </div>
             </div>         
@@ -95,31 +96,31 @@
                             <li><p style="font-weight: bold;">Notfications</p></li>
                             <li>
                                 <a href="#">
-                                    <div><div style="background-color: #2DE358"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div><div style="background-color: #2DE358"><i class="fas fa-user-plus"></i></div></div>
                                     <div class="text-left"><div><span>12 New Member Joined</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div><div style="background-color: #3832F9"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div><div style="background-color: #3832F9"><i class="fas fa-shopping-cart"></i></div></div>
                                     <div class="text-left"><div><span>4 sale made</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div><div style="background-color: #FB4548"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div><div style="background-color: #FB4548"><i class="fas fa-trash"></i></div></div>
                                     <div class="text-left"><div><b>Nancy Doe</b><span class="bol">deleted account</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div><div style="background-color: #D800D3"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div><div style="background-color: #D800D3"><i class="fas fa-sync-alt"></i></div></div>
                                     <div class="text-left"><div><span>Settings Updated</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div><div style="background-color: #2B1FB7"><i class="glyphicon glyphicon-alert"></i></div></div>
+                                    <div><div style="background-color: #2B1FB7"><i class="fas fa-comment-dots"></i></div></div>
                                     <div class="text-left"><div><b>John</b><span class="bol">commented on your post</span></div><div><i class="far fa-clock"></i><span>14 mins ago</span></div></div>
                                 </a>
                             </li>
@@ -169,49 +170,51 @@
                      </li>
                 </ul>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="content">
-                        <div class="col-lg-10">
-                            <p>Dashboard</p>
-                            <p> Welcome to Swift application </p>
+                        <ul class="nav nav-tabs"> 
+                                    <li class="active"><a data-toggle="tab" href="#home">Income Report</a></li> 
+                                    <li><a data-toggle="tab" href="#menu1">Sale Report</a></li> 
+                                </ul> 
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                    <div class="col-lg-12 " id="content-pat">
+                            <div class="col-lg-2 col-sm-2 col-xs-2 bg-success">
+                                <span>
+                                    <p>Total Income</p>
+                                    <p>$127 526</p>
+                                </span>
+                                <span class="dynamicbar"></span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 bg-danger">
+                                <span>
+                                    <p>Unique Patients</p>
+                                    <p>457</p>
+                                </span>
+                                <span class="dynamicbar1"></span>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 bg-primary">
+                                <span>
+                                    <p>Monthly Income</p>
+                                    <p>$125</p>
+                                </span>
+                                <span class="dynamicbar2"></span>
+                            </div>
+                            <div class="col-lg-2 bg-warning">
+                                <span>
+                                    <p>Net Profit</p>
+                                    <p>$1 063</p>
+                                </span>
+                                <span class="dynamicbar3"></span>
+                            </div>
                         </div>
-                        <div class="col-lg-12 " id="content-pat">
-                            <div class="col-lg-2 col-sm-2 col-xs-2">
-                                <span>
-                                    <p>New Patient</p>
-                                    <p>27</p>
-                                </span>
-                                <span><i class="fas fa-user text-primary"></i></span>
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                <span>
-                                    <p>OPD Patient</p>
-                                    <p>12</p>
-                                </span>
-                                <span><i class="fas fa-user text-success"></i></span>
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                <span>
-                                    <p>Today's Operations</p>
-                                    <p>05</p>
-                                </span>
-                                <span><i class="fas fa-bug text-danger"></i></span>
-                            </div>
-                            <div class="col-lg-2">
-                                <span>
-                                    <p>Hospital Earning</p>
-                                    <p>$3,540</p>
-                                </span>
-                                <span><i class="fas fa-coins text-warning"></i></span>
-                            </div>
-                        </div>
-                        <div class="col-lg-12" id="content-chart">
+                              <div class="col-lg-12" id="content-chart">
                             <div>
                                 <span>Hospital Survey</span>
                             </div>
                                 <div class="col-lg-12" style="position: relative; height:300px; width:100%">
                                     <canvas id="myChart"></canvas>
                                     </div>
-                        </div>
-                        <div class="col-lg-12" id="content-chart2">
+                        </div>          
+                              <div class="col-lg-12" id="content-chart2">
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
                                 <div>
                                     <p>NEW PATIANT
@@ -291,154 +294,40 @@
                                 <div class="chart-container" style="position: relative; height:100px; width:100% ; top:50px;" id="chartContainer2" >
                                     <canvas class="col-xs-12"></canvas>
                                 </div>
-                            </div>
+                            </div>          
+                                        
+                                    </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="col-lg-12" id="content-tbl">
-                                <div>
-                                    <p>New Patient List <a href="#"><i class="fas fa-ellipsis-v"></i></a></p>
-                                    <p>Description text here...</p>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table ">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Firstname</th>
-                                                <th>Lastname</th>
-                                                <th>Username</th>
-                                                <th>Diseases</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Virginia</td>
-                                                <td>Rose</td>
-                                                <td>@Rose</td>
-                                                <td><span class="label label-danger text-center">Fever</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Julie</td>
-                                                <td>Gaylord</td>
-                                                <td>@Julie </td>
-                                                <td><span class="label label-primary text-center">Cancer</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Jacqueline</td>
-                                                <td>Woods</td>
-                                                <td>@Woods</td>
-                                                <td><span class="label label-warning text-center">Lakva</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Jonathan</td>
-                                                <td>Lewis</td>
-                                                <td>@Jonathan</td>
-                                                <td><span class="label label-success text-center">Dental</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Margaret</td>
-                                                <td>Griffin</td>
-                                                <td>@Margaretv</td>
-                                                <td><span class="label label-primary text-center">Cancer</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Joseph</td>
-                                                <td>Hunter</td>
-                                                <td>@Rose</td>
-                                                <td><span class="label label-success text-center">Dental</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-xs-12" id="content-end">
-                            <div class="col-lg-3 bg-danger col-md-3 col-sm-4 col-xs-4">                                    
-                                <p>Patient Prograss <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                                </p>
-                                <div>
-                                    <span>Mark Otto</span><span class="label label-danger text-center">21%</span>
-                                </div>
-                                <div>
-                                    <span>Jacob Thornton</span><span class="label text-center label-default">50%</span>
-                                </div>
-                                <div>
-                                    <span>Jacob Thornton</span><span class="label label-success text-center">90%</span>
-                                </div>
-                                <div>
-                                    <span>M. Arthur </span><span class="label label-primary text-center">75%</span>
-                                </div>
-                                <div>
-                                    <span>Jacob Thornton </span><span class="label label-warning text-center">60%</span>
-                                </div>
-                                <div>
-                                    <span>M. Arthur </span><span class="label label-success text-center">91%</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 bg-primary col-md-3 col-sm-4 col-xs-4">
-                              <p>Patient Prograss <a href="#"><i class="fas fa-ellipsis-v"></i></a> </p>
-                                <div class="table-responsive">
-                                    <table class="table " style="position= relative;top=200px;">
-                                        <thead>
-                                            <tr>
-                                                <th>Firstname</th>
-                                                <th>Chart</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Dean Otto</td>
-                                                <td><span class="dynamicbar"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>K. Thornton</td>
-                                                <td><span class="dynamicbar1"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Kane D.</td>
-                                                <td><span class="dynamicbar2"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jack Bird</td>
-                                                <td><span class="dynamicbar3"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hughe L.</td>
-                                                <td><span class="dynamicbar4"></span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 bg-success col-md-3 col-sm-4 col-xs-4">
-                                <p>Visits from countries <a href="#"><i class="fas fa-ellipsis-v"></i></a> </p>
-                                <div>
-                                    <div class="progress-pat">
-                                        <div><span>6350</span><span>From India 58%</span></div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 58%"></div></div>
+                                    <div id="menu1" class="tab-pane fade">
+                                        <div class="col-lg-6 bg-info">
+                                            <div class="col-lg-12 bg-primary">
+                                                <div>
+                                                    <span>RADAR CHART</span>
+                                                    <span><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a></span>
+                                                </div>
+                                                <div id="chartContainer5"  style="position: static!important;width: 100%!important; height:300px!important;"></div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 bg-info">
+                                            <div class="col-lg-12">
+                                                <div>
+                                                    <span>PIE CHART</span>
+                                                    <span><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a></span>
+                                                </div>
+                                                <div id="myChart7"  style="width: 100%!important; height: 320px!important;"></div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 bg-info">
+                                            <div class="col-lg-12">
+                                                <div>
+                                                    <span>BAR CHART</span>
+                                                    <span><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a></span>
+                                                </div>
+                                                <div id="chartContainer6"  style="width: 100%!important; height: 340px!important;"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="progress-pat">
-                                        <div><span>3250</span><span>From UAE 90%</span></div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div></div>
-                                    </div>
-                                    <div class="progress-pat">
-                                        <div><span>1250</span><span>From Australia 70%</span></div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>
-                                    </div>
-                                    <div class="progress-pat">
-                                        <div><span>1350</span><span>From USA 40%</span></div>
-                                        <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div></div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        </div>                 
                     </div>
                     
                 </div>
@@ -450,39 +339,37 @@
                 <div class="center-align" id="Doctor Schedule"><div class="bg-success d1"><i class="fas fa-money-bill-alt"></i></div></div>
         </div>
     </div>
+    <span><span class="dynamicbar"></span></span>
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
-    <script src="../../../Project/c.js">
-
-    </script>
-    <script src="Chart.bundle.min.js"></script>
+    
     <script type="text/javascript" src="jquery.sparkline.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-    <script type="text/javascript">            
+    <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="c.js">
+
+    </script>
+    <script src="jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
+    <script src="Chart.bundle.min.js"></script>
+    <script>
         $(function() {
 
         var myvalues = [30,25,10,20,36,4,19];
 
-        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green',} );
+        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'white',} );
             var myvalues1 = [10,4,26,38,18,14,29];
 
-        $('.dynamicbar1').sparkline(myvalues1, {type: 'bar', barColor: 'green',} );
+        $('.dynamicbar1').sparkline(myvalues1, {type: 'bar', barColor: 'white',} );
             var myvalues2 = [15,25,5,12,35,3,38];
 
-        $('.dynamicbar2').sparkline(myvalues2, {type: 'bar', barColor: 'green',} );
-            var myvalues3 = [18,30,3,36,12,22,40];
-
-        $('.dynamicbar3').sparkline(myvalues3, {type: 'bar', barColor: 'green',} );
-            var myvalues4 = [12,1,36,16,30,24,19];
-
-        $('.dynamicbar4').sparkline(myvalues4, {type: 'bar', barColor: 'green',} );
-
+        $('.dynamicbar2').sparkline(myvalues2, {type:'line', barColor: 'white',} );
+            var myvalues3 = [15,25,5,12,35,3,38];
+        $('.dynamicbar3').sparkline(myvalues3, {type: 'bar', barColor: 'white',} );
     });
-var ctx = document.getElementById("myChart");
+        var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -523,8 +410,150 @@ var myChart = new Chart(ctx, {
         },
     }
 });
-   window.onload = function () {
+        window.onload = function () {
+            var myConfig = {
+    "type": "radar",
+    "plot": {
+        "aspect": "area"
+    },
+    "scale-v": {
+        "values": "0:100:25",
+        "labels": ["", "", "", "", ""],
+        "ref-line": {
+            "line-color": "none"
+        },
+        "guide": {
+            "line-style": "solid"
+        }
+    },
+    "scale-k": {
+        "values": "0:330:30",
+        "format": "%v°",
+        "aspect": "circle", //To set the chart shape to circular.
+        "guide": {
+            "line-style": "solid"
+        }
+    },
+    "series": [{
+        "values": [59, 30, 65, 34, 40, 33, 31, 90, 81, 70, 100, 28]
+    }, {
+        "values": [30, 100, 90, 99, 59, 34, 5, 3, 12, 15, 16, 75, 34]
+    }, {
+        "values": [34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 100]
+    }]
+};
 
+zingchart.render({ 
+	id : 'myChart7', 
+	data : myConfig, 
+	height: '100%', 
+	width: '100%' 
+});
+    var chart6 = new CanvasJS.Chart("chartContainer6", {
+	animationEnabled: true,
+	title:{
+		text: "Google - Consolidated Quarterly Revenue",
+		fontFamily: "arial black",
+		fontColor: "#695A42"
+	},
+	axisX: {
+		interval: 1,
+		intervalType: "year"
+	},
+	axisY:{
+		valueFormatString:"#0",
+		gridColor: "#B6B1A8",
+		tickColor: "#B6B1A8"
+	},
+	toolTip: {
+		shared: true
+    },
+	data: [{
+		type: "stackedColumn",
+		showInLegend: true,
+		color: "#696661",
+		name: "Q1",
+		dataPoints: [
+			{ y: 6.75, x: new Date(2010,0) },
+			{ y: 8.57, x: new Date(2011,0) },
+			{ y: 10.64, x: new Date(2012,0) },
+			{ y: 13.97, x: new Date(2013,0) },
+			{ y: 15.42, x: new Date(2014,0) },
+			{ y: 17.26, x: new Date(2015,0) },
+			{ y: 20.26, x: new Date(2016,0) }
+		]
+		},
+		{        
+			type: "stackedColumn",
+			showInLegend: true,
+			name: "Q2",
+			color: "#EDCA93",
+			dataPoints: [
+				{ y: 6.82, x: new Date(2010,0) },
+				{ y: 9.02, x: new Date(2011,0) },
+				{ y: 11.80, x: new Date(2012,0) },
+				{ y: 14.11, x: new Date(2013,0) },
+				{ y: 15.96, x: new Date(2014,0) },
+				{ y: 17.73, x: new Date(2015,0) },
+				{ y: 21.5, x: new Date(2016,0) }
+			]
+		},
+		{        
+			type: "stackedColumn",
+			showInLegend: true,
+			name: "Q3",
+			color: "#695A42",
+			dataPoints: [
+				{ y: 7.28, x: new Date(2010,0) },
+				{ y: 9.72, x: new Date(2011,0) },
+				{ y: 13.30, x: new Date(2012,0) },
+				{ y: 14.9, x: new Date(2013,0) },
+				{ y: 18.10, x: new Date(2014,0) },
+				{ y: 18.68, x: new Date(2015,0) },
+				{ y: 22.45, x: new Date(2016,0) }
+			]
+		},
+		{        
+			type: "stackedColumn",
+			showInLegend: true,
+			name: "Q4",
+			color: "#B6B1A8",
+			dataPoints: [
+				{ y: 8.44, x: new Date(2010,0) },
+				{ y: 10.58, x: new Date(2011,0) },
+				{ y: 14.41, x: new Date(2012,0) },
+				{ y: 16.86, x: new Date(2013,0) },
+				{ y: 10.64, x: new Date(2014,0) },
+				{ y: 21.32, x: new Date(2015,0) },
+				{ y: 26.06, x: new Date(2016,0) }
+			]
+	}]
+});
+var chart5 = new CanvasJS.Chart("chartContainer5",{ 
+		axisY: { 
+			title: "Products in %" 
+		}, 
+		legend :{ 
+			verticalAlign: "center", 
+			horizontalAlign: "right" 
+		}, 
+		data: [ 
+		{ 
+			type: "pie", 
+			showInLegend: true, 
+			toolTipContent: "{label} <br/> {y} %", 
+			indexLabel: "{y} %", 
+			dataPoints: [ 
+				{ label: "A",  y: 30.3, legendText: "A"}, 
+				{ label: "B",    y: 19.1, legendText: "B"  }, 
+				{ label: "C",   y: 4.0,  legendText: "C" }, 
+				{ label: "D",       y: 3.8,  legendText: "D"}, 
+				{ label: "E",   y: 3.2,  legendText: "E" }, 
+				{ label: "F",   y: 39.6, legendText: "F" } 
+			] 
+		} 
+		] 
+	}); 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
@@ -610,8 +639,26 @@ var chart = new CanvasJS.Chart("chartContainer", {
 chart.render();
 chart1.render();
 chart2.render();
+
+setTimeout(function(){
+ chart6.render();
+chart5.render();
+},4000);
+            var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+ document.getElementById("hideAll").style.display = "none";
+}, delayInMilliseconds); 
 }
-</script>
+    </script>
+    <div style="display: block" id="hideAll"><div class="container"><div class="lds-ring"><div></div><div></div><div></div><div></div></div><div>loading ...</div></div></div>
+    <script>
+      /*window.onload = function() 
+ { 
+}
+
+*/    </script>
+        
 
 </body>
 </html>
