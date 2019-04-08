@@ -46,7 +46,7 @@ body{
     #xsmenu{
     display: block;
     }
-    #search{
+    #search1{
         display: none;
     }
 }
@@ -145,13 +145,7 @@ div.row div.col-lg-12 div.col-lg-2 div.col-lg-12 div.col-lg-11 div.text-center p
     color: #767676;
     font-size: 13px;
 }
-div.row div.col-lg-12 div.col-lg-2 input{
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    border-bottom: solid 1px #DDDDDD;
-    color: antiquewhite;
-}
+
 div.row div.col-lg-12 div.col-lg-2 input::placeholder {
     color: aliceblue;
 } 
@@ -361,7 +355,8 @@ div.row div.col-lg-12 div.col-lg-10{
  div#content{
     background-color: #F3F3F3;
     background-image: none;
-    height: 1000px;
+    height: auto;
+     min-height: 800px;
     position: absolute;
 }
 div#content div.col-lg-10 p:first-of-type{
@@ -464,4 +459,7 @@ div#menu-cir div.text-center{
     position: absolute;
     top: -120px;
     display: none;
+}
+ul.pagination li{
+    cursor: pointer;
 }
