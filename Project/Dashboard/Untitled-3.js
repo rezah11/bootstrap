@@ -4,7 +4,7 @@ $(document).ready(function(){
     var combovalue = $('select').find(":selected").text();
     $("#search").val("");
     var inpvalue= $("#search").val();
-    $.getJSON('gallery_cat1.json',function(data){
+    $.getJSON('list.json',function(data){
 		d = data.PatiantList;
 		//console.log(d[0]);
         loadpage(combovalue,inpvalue);
